@@ -1,5 +1,7 @@
 package refactorizar;
 
+import java.util.Scanner;
+
 /**
  * Lista los numeros primos de dos cifras
  *
@@ -13,6 +15,8 @@ public class Refactorizar {
         numDigitos = 2;
         if (numDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
+            Scanner dato = new Scanner(System.in);
+            numDigitos = dato.nextInt();
         }
         for (int i = 1; i <= 99999; i++) {
             int divisionEntera = i;
